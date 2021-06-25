@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TRF37D73
+D 1MHz-6GHz, 19.5dB RF Gain Block, WSON-8
+K gain block RF
+F https://www.ti.com/lit/ds/symlink/trf37d73.pdf
+$ENDCMP
+#
+#End Doc Library

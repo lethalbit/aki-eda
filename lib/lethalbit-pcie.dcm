@@ -1,0 +1,43 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PCIe-x1
+D PCI Express x1 Symbol
+K PCIe x1
+$ENDCMP
+#
+$CMP PCIe-x1-ALT
+D PCI Express x1 Alternate Symbol
+K PCIe x1
+$ENDCMP
+#
+$CMP PCIe-x16
+D PCI Express x16 Symbol
+K PCIe x16
+$ENDCMP
+#
+$CMP PCIe-x16-ALT
+D PCI Express x16 Alternate Symbol
+K PCIe x16
+$ENDCMP
+#
+$CMP PCIe-x4
+D PCI Express x4 Symbol
+K PCIe x4
+$ENDCMP
+#
+$CMP PCIe-x4-ALT
+D PCI Express x4 Alternate Symbol
+K PCIe x4
+$ENDCMP
+#
+$CMP PCIe-x8
+D PCI Express x8 Symbol
+K PCIe x8
+$ENDCMP
+#
+$CMP PCIe-x8-ALT
+D PCI Express x8 Alternate Symbol
+K PCIe x8
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,73 @@
+(module SC_PAD_8_LEGACY (layer F.Cu) (tedit 5EAA1A83)
+  (fp_text reference G*** (at 5.35 -1.1 -180) (layer F.SilkS) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3)))
+  )
+  (fp_text value LOGO (at 5.35 -3.5 -180) (layer F.SilkS) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3)))
+  )
+  (fp_poly (pts (xy 0.05 0.05) (xy 10.05 0.05) (xy 10.05 9.65) (xy 0.05 9.65)) (layer F.Mask) (width 0.1))
+  (pad Z5 smd custom (at -1.2 8.65 180) (size 1.524 1.524) (layers F.Cu)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy 0.767418 0.825225) (xy -4.292242 0.825225) (xy -4.292242 8.452853) (xy -8.258608 8.452853) (xy -8.258608 -0.878279)
+         (xy 0.767418 -0.878279) (xy 0.767418 0.825225)) (width 0.01))
+    ))
+  (pad Z6 smd custom (at -1.15 6.15 180) (size 1.524 1.524) (layers F.Cu)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy 0.817418 0.867768) (xy -3.428628 0.867768) (xy -3.428628 -0.835736) (xy 0.817418 -0.835736) (xy 0.817418 0.867768)
+) (width 0.01))
+    ))
+  (pad Z7 smd custom (at -1.15 3.6 180) (size 1.524 1.524) (layers F.Cu)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy 0.842843 0.86031) (xy -3.428628 0.86031) (xy -3.428628 -0.843193) (xy 0.842843 -0.843193) (xy 0.842843 0.86031)
+) (width 0.01))
+    ))
+  (pad Z8 smd custom (at -1.15 1.05 180) (size 1.524 1.524) (layers F.Cu)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy 0.817418 0.852853) (xy -3.428628 0.852853) (xy -3.428628 -0.850651) (xy 0.817418 -0.850651) (xy 0.817418 0.852853)
+) (width 0.01))
+    ))
+  (pad Z4 smd custom (at 11.3 1.05 180) (size 1.524 1.524) (layers F.Cu)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy 3.427778 0.852853) (xy -0.792842 0.852853) (xy -0.792842 -0.850651) (xy 3.427778 -0.850651) (xy 3.427778 0.852853)
+) (width 0.01))
+    ))
+  (pad Z3 smd custom (at 11.3 3.6 180) (size 1.524 1.524) (layers F.Cu)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy 3.427778 0.86031) (xy -0.792842 0.86031) (xy -0.792842 -0.843193) (xy 3.427778 -0.843193) (xy 3.427778 0.86031)
+) (width 0.01))
+    ))
+  (pad Z2 smd custom (at 11.3 6.15 180) (size 1.524 1.524) (layers F.Cu)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy 3.427778 0.867768) (xy -0.792842 0.867768) (xy -0.792842 -0.835736) (xy 3.427778 -0.835736) (xy 3.427778 0.867768)
+) (width 0.01))
+    ))
+  (pad Z1 smd custom (at 11.3 8.7 180) (size 1.524 1.524) (layers F.Cu)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy 3.427778 0.875225) (xy -0.792842 0.875225) (xy -0.792842 -0.828279) (xy 3.427778 -0.828279) (xy 3.427778 0.875225)
+) (width 0.01))
+    ))
+)
