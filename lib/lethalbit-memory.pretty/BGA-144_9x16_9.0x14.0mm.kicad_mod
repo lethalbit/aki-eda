@@ -1,5 +1,6 @@
-(footprint "BGA-144_9x16_9.0x14.0mm" (version 20210126) (generator pcbnew) (layer "F.Cu")
-  (tedit 603BC548)
+(footprint "BGA-144_9x16_9.0x14.0mm" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 61D90E86)
   (attr through_hole)
   (fp_text reference "REF**" (at 0 -8) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
@@ -128,7 +129,7 @@
   (pad "T7" smd circle (at 1.6 6) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e652d19e-7064-4bbc-b5f4-e3c6e27ab69b))
   (pad "T8" smd circle (at 2.4 6) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e652d19e-7064-4bbc-b5f4-e3c6e27ab69b))
   (pad "T9" smd circle (at 3.2 6) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e652d19e-7064-4bbc-b5f4-e3c6e27ab69b))
-  (model "${KISYS3DMOD}/Package_BGA.3dshapes/BGA-96_9.0x13.0mm_Layout2x3x16_P0.8mm.step"
+  (model "${KICAD6_3DMODEL_DIR}/Package_BGA.3dshapes/BGA-96_9.0x13.0mm_Layout2x3x16_P0.8mm.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

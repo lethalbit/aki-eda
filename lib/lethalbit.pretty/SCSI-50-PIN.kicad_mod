@@ -1,5 +1,6 @@
-(footprint "SCSI-50-PIN" (version 20210606) (generator pcbnew) (layer "F.Cu")
-  (tedit 60E1F8CB)
+(footprint "SCSI-50-PIN" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 61D90C82)
   (fp_text reference "REF**" (at 0 6.85 180) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp d3a79c01-a57e-459b-bff4-2196585e83e0)
@@ -65,4 +66,9 @@
   (pad "50" thru_hole circle (at 25.92 2.145) (size 1.6 1.6) (drill 1.1) (layers *.Cu *.Mask) (tstamp 56639b5f-ca9e-48cd-be49-f16b3c6b2186))
   (pad "51" thru_hole circle (at 37.425 0) (size 4.65 4.65) (drill 3.1) (layers *.Cu *.Mask) (tstamp 7049b47c-ac96-4f03-804d-8a49eac31c50))
   (pad "52" thru_hole circle (at -37.425 0) (size 4.65 4.65) (drill 3.1) (layers *.Cu *.Mask) (tstamp 9e7ea67a-3b8d-4743-9aad-451d3daaed1a))
+  (model "${EDALIBS}/lethalbit-connectors.3dshapes/112-050-113R001.STEP"
+    (offset (xyz 0 -11 8))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -180 0 0))
+  )
 )
