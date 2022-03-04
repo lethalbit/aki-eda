@@ -247,7 +247,7 @@ class Cell:
 				prop.justify = True
 
 
-	def __init__(self, name, pins, lef_file_name = '', bounds = (0.0, 0.0)):
+	def __init__(self, name, pins, lef_file_name, bounds = (0.0, 0.0), properties = []):
 		self.id = name
 		self.pins = pins
 		self._pin_counts = None
@@ -258,10 +258,11 @@ class Cell:
 		self._fixup_pins()
 
 		self.properties = [
-			Property('Reference', 'CELL',        0),
+			Property('Reference', 'X',           0),
 			Property('Value',     name,          1, False),
 			Property('Footprint', f'{bounds}',   2),
-			Property('Datasheet', lef_file_name, 3)
+			Property('Datasheet', lef_file_name, 3),
+			*properties
 		]
 
 		self._fixup_properties()
@@ -432,6 +433,12 @@ class Pin:
 	def __repr__(self):
 		return f'(pin "{self.name}" {self.type} {self.dir})'
 
+def _flatten(col):
+	return [i for sl in list(col) for i in sl]
+
+def _flatten_str(col):
+	return ''.join(_flatten(col))
+
 def extract_cells(model, lef_file, lib_name, lef_file_name, args):
 	ignore_pwr = args.ignore_pwr
 
@@ -448,10 +455,14 @@ def extract_cells(model, lef_file, lib_name, lef_file_name, args):
 			m = i['macro']
 
 			raw_name = ''.join(m['name'][0])
-			if '__' in raw_name:
-				cell_name = raw_name.split('__')[1]
+			if args.split_char is not None:
+				if args.split_char in raw_name:
+					cell_name = raw_name.split(args.split_char)[-1]
+				else:
+					cell_name = raw_name
 			else:
 				cell_name = raw_name
+
 			pins = []
 			ignored_pins = 0
 
@@ -460,8 +471,7 @@ def extract_cells(model, lef_file, lib_name, lef_file_name, args):
 			for stmt in m['mstmts']:
 				if 'pin' in stmt:
 					pin = stmt['pin']
-					flattened_name = [i for sl in list(pin['name']) for i in sl]
-					pin_name = ''.join(flattened_name)
+					pin_name = _flatten_str(pin['name'])
 					pin_dir = None
 					pin_type = None
 
@@ -472,9 +482,9 @@ def extract_cells(model, lef_file, lib_name, lef_file_name, args):
 							pin_type = pstmt['use']['pin_type']
 
 					if args.infer_pwr and pin_type is None:
-						if 'vss' in pin_name.lower():
+						if 'vss' in pin_name.lower() or 'gnd' in pin_name.lower():
 							pin_type = 'GROUND'
-						elif 'vdd' in pin_name.lower():
+						elif 'vdd'in pin_name.lower() or 'vcc' in pin_name.lower():
 							pin_type = 'POWER'
 
 					if ignore_pwr:
@@ -487,8 +497,61 @@ def extract_cells(model, lef_file, lib_name, lef_file_name, args):
 			print(f'  => Found {len(pins)} pins in cell \'{cell_name}\'')
 			if ignore_pwr:
 				print(f'  => Ignored {ignored_pins} power pins')
+
+			bounds = (0.0, 0.0)
+			origin = (0.0, 0.0)
+			cell_class = ''
+			foreign = ''
+			symmetry = ''
+
+			sz = None
+			og = None
+			clss = None
+			frgn = None
+			symm = None
+			for stmt in m['mstmts']:
+				if 'size' in stmt:
+					sz = stmt['size']
+				if 'origin' in stmt:
+					og = stmt['origin']
+				if 'class' in stmt:
+					clss = stmt['class']
+				if 'foreign' in stmt:
+					frgn = stmt['foreign']
+				if 'symmetry' in stmt:
+					symm = stmt['symmetry']
+
+			if sz is not None:
+				bounds = (
+					float(_flatten_str(sz[2])),
+					float(_flatten_str(sz[5]))
+				)
+
+			if og is not None:
+				origin = (
+					float(_flatten_str(og[2]['x'])),
+					float(_flatten_str(og[2]['y'])),
+				)
+
+			if clss is not None:
+				cell_class = clss['type']
+
+			if frgn is not None:
+				foreign = _flatten_str(frgn['name'])
+
+			if symm is not None:
+				symmetry = _flatten_str(symm[1])
+
+
 			cells.append(Cell(
-				cell_name, pins, lef_file_name
+				cell_name, pins, lef_file_name,
+				bounds = bounds, properties = [
+					Property('Class',    f'{cell_class}', 10),
+					Property('Foreign',  f'{foreign}',    11),
+					Property('Origin',   f'{origin}',     12),
+					Property('Size',     f'{bounds}',     13),
+					Property('Symmetry', f'{symmetry}',   14)
+				]
 			))
 	print(f' => Found {len(cells)} cell macros in {lef_file_name}')
 	return {
@@ -565,6 +628,12 @@ def main():
 		'--skip-existing', '-S',
 		action = 'store_true',
 		help   = 'Skip ingestion and parsing of a LEF file if the .kicad_sym file already exists'
+	)
+
+	parser.add_argument(
+		'--split-char', '-s',
+		type = str,
+		help = 'The characters to split cell names on, (such as `__`), the left most element will be selected as the cell name'
 	)
 
 	args = parser.parse_args()
