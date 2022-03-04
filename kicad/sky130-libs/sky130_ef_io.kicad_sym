@@ -1,11 +1,11 @@
 (kicad_symbol_lib (version 20211014) (generator lef2kicad_sym)
   (symbol
-    "analog_pad"
+    "sky130_ef_io__analog_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -17,9 +17,9 @@
     )
     (property
       "Value"
-      "analog_pad"
+      "sky130_ef_io__analog_pad"
       (id 1)
-      (at -17.78 -15.24 0)
+      (at -19.049999999999997 -13.97 0)
       (effects
         (font
           (size 1 1)
@@ -29,7 +29,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 200.0)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -51,9 +51,69 @@
         hide
       )
     )
+    (property
+      "Class"
+      "PAD"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__analog_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 200.0)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
     (rectangle
-      (start -17.78 -15.24)
-      (end 17.78 15.24)
+      (start -19.049999999999997 -13.97)
+      (end 19.049999999999997 13.97)
       (stroke
         (width 0.1)
         (type solid)
@@ -66,7 +126,7 @@
     (pin
       bidirectional
       line
-      (at -20.32 -12.7 0)
+      (at -21.589999999999996 -11.43 0)
       (length 2.54)
       (name "P_CORE"
         (effects
@@ -88,7 +148,7 @@
     (pin
       power_in
       line
-      (at -3.8100000000000023 -17.78 90)
+      (at -5.079999999999998 -16.51 90)
       (length 2.54)
       (name "VSSA"
         (effects
@@ -110,7 +170,7 @@
     (pin
       power_in
       line
-      (at -1.2700000000000014 -17.78 90)
+      (at -2.5399999999999974 -16.51 90)
       (length 2.54)
       (name "VSSD"
         (effects
@@ -132,7 +192,7 @@
     (pin
       bidirectional
       line
-      (at 20.32 -12.7 180)
+      (at 21.589999999999996 -11.43 180)
       (length 2.54)
       (name "AMUXBUS_B"
         (effects
@@ -154,7 +214,7 @@
     (pin
       bidirectional
       line
-      (at -20.32 -10.16 0)
+      (at -21.589999999999996 -8.89 0)
       (length 2.54)
       (name "AMUXBUS_A"
         (effects
@@ -176,7 +236,7 @@
     (pin
       power_in
       line
-      (at -3.8100000000000023 17.78 270)
+      (at -5.079999999999998 16.51 270)
       (length 2.54)
       (name "VDDIO_Q"
         (effects
@@ -198,7 +258,7 @@
     (pin
       power_in
       line
-      (at -1.2700000000000014 17.78 270)
+      (at -2.5399999999999974 16.51 270)
       (length 2.54)
       (name "VDDIO"
         (effects
@@ -220,7 +280,7 @@
     (pin
       bidirectional
       line
-      (at 20.32 -10.16 180)
+      (at 21.589999999999996 -8.89 180)
       (length 2.54)
       (name "VSWITCH"
         (effects
@@ -242,7 +302,7 @@
     (pin
       power_in
       line
-      (at 1.2699999999999996 -17.78 90)
+      (at 3.552713678800501e-15 -16.51 90)
       (length 2.54)
       (name "VSSIO"
         (effects
@@ -264,7 +324,7 @@
     (pin
       power_in
       line
-      (at 1.2699999999999996 17.78 270)
+      (at 3.552713678800501e-15 16.51 270)
       (length 2.54)
       (name "VDDA"
         (effects
@@ -284,9 +344,9 @@
       )
     )
     (pin
-      bidirectional
+      power_in
       line
-      (at -20.32 -7.62 0)
+      (at 2.5400000000000027 16.51 270)
       (length 2.54)
       (name "VCCD"
         (effects
@@ -306,9 +366,9 @@
       )
     )
     (pin
-      bidirectional
+      power_in
       line
-      (at 20.32 -7.62 180)
+      (at 5.080000000000002 16.51 270)
       (length 2.54)
       (name "VCCHIB"
         (effects
@@ -330,7 +390,7 @@
     (pin
       power_in
       line
-      (at 3.8099999999999987 -17.78 90)
+      (at 2.5400000000000027 -16.51 90)
       (length 2.54)
       (name "VSSIO_Q"
         (effects
@@ -352,7 +412,7 @@
     (pin
       bidirectional
       line
-      (at -20.32 -5.08 0)
+      (at -21.589999999999996 -6.3500000000000005 0)
       (length 2.54)
       (name "P_PAD"
         (effects
@@ -373,12 +433,12 @@
     )
   )
   (symbol
-    "bare_pad"
+    "sky130_ef_io__bare_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -390,7 +450,7 @@
     )
     (property
       "Value"
-      "bare_pad"
+      "sky130_ef_io__bare_pad"
       (id 1)
       (at -5.08 -2.54 0)
       (effects
@@ -402,7 +462,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(65.4, 75.4)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -416,6 +476,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "BLOCK"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__bare_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(2.7, 2.7)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(65.4, 75.4)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -460,12 +580,12 @@
     )
   )
   (symbol
-    "com_bus_slice_1um"
+    "sky130_ef_io__com_bus_slice_1um"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -477,7 +597,7 @@
     )
     (property
       "Value"
-      "com_bus_slice_1um"
+      "sky130_ef_io__com_bus_slice_1um"
       (id 1)
       (at -20.32 -11.43 0)
       (effects
@@ -489,7 +609,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(1.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -503,6 +623,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'SPACER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__com_bus_slice_1um"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(1.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -789,12 +969,12 @@
     )
   )
   (symbol
-    "com_bus_slice_5um"
+    "sky130_ef_io__com_bus_slice_5um"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -806,7 +986,7 @@
     )
     (property
       "Value"
-      "com_bus_slice_5um"
+      "sky130_ef_io__com_bus_slice_5um"
       (id 1)
       (at -20.32 -11.43 0)
       (effects
@@ -818,7 +998,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(5.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -832,6 +1012,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'SPACER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__com_bus_slice_5um"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(5.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -1118,12 +1358,12 @@
     )
   )
   (symbol
-    "com_bus_slice_10um"
+    "sky130_ef_io__com_bus_slice_10um"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -1135,7 +1375,7 @@
     )
     (property
       "Value"
-      "com_bus_slice_10um"
+      "sky130_ef_io__com_bus_slice_10um"
       (id 1)
       (at -20.32 -11.43 0)
       (effects
@@ -1147,7 +1387,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(10.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -1161,6 +1401,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'SPACER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__com_bus_slice_10um"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(10.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -1447,12 +1747,12 @@
     )
   )
   (symbol
-    "com_bus_slice_20um"
+    "sky130_ef_io__com_bus_slice_20um"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -1464,7 +1764,7 @@
     )
     (property
       "Value"
-      "com_bus_slice_20um"
+      "sky130_ef_io__com_bus_slice_20um"
       (id 1)
       (at -20.32 -11.43 0)
       (effects
@@ -1476,7 +1776,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(20.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -1490,6 +1790,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'SPACER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__com_bus_slice_20um"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(20.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -1776,12 +2136,12 @@
     )
   )
   (symbol
-    "connect_vcchib_vccd_and_vswitch_vddio_slice_20um"
+    "sky130_ef_io__connect_vcchib_vccd_and_vswitch_vddio_slice_20um"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -1793,7 +2153,7 @@
     )
     (property
       "Value"
-      "connect_vcchib_vccd_and_vswitch_vddio_slice_20um"
+      "sky130_ef_io__connect_vcchib_vccd_and_vswitch_vddio_slice_20um"
       (id 1)
       (at -20.32 -11.43 0)
       (effects
@@ -1805,7 +2165,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(20.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -1819,6 +2179,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'AREAIO')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__connect_vcchib_vccd_and_vswitch_vddio_slice_20um"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(20.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -2105,12 +2525,12 @@
     )
   )
   (symbol
-    "corner_pad"
+    "sky130_ef_io__corner_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -2122,7 +2542,7 @@
     )
     (property
       "Value"
-      "corner_pad"
+      "sky130_ef_io__corner_pad"
       (id 1)
       (at -20.32 -11.43 0)
       (effects
@@ -2134,7 +2554,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(200.0, 204.0)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -2148,6 +2568,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('ENDCAP', 'TOPRIGHT')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__corner_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(200.0, 204.0)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -2434,12 +2914,12 @@
     )
   )
   (symbol
-    "disconnect_vccd_slice_5um"
+    "sky130_ef_io__disconnect_vccd_slice_5um"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -2451,7 +2931,7 @@
     )
     (property
       "Value"
-      "disconnect_vccd_slice_5um"
+      "sky130_ef_io__disconnect_vccd_slice_5um"
       (id 1)
       (at -19.049999999999997 -11.43 0)
       (effects
@@ -2463,7 +2943,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(5.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -2477,6 +2957,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'AREAIO')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__disconnect_vccd_slice_5um"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(5.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -2719,12 +3259,12 @@
     )
   )
   (symbol
-    "disconnect_vdda_slice_5um"
+    "sky130_ef_io__disconnect_vdda_slice_5um"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -2736,7 +3276,7 @@
     )
     (property
       "Value"
-      "disconnect_vdda_slice_5um"
+      "sky130_ef_io__disconnect_vdda_slice_5um"
       (id 1)
       (at -19.049999999999997 -11.43 0)
       (effects
@@ -2748,7 +3288,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(5.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -2762,6 +3302,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'AREAIO')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__disconnect_vdda_slice_5um"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(5.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -3004,12 +3604,12 @@
     )
   )
   (symbol
-    "gpiov2_pad"
+    "sky130_ef_io__gpiov2_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -3021,7 +3621,7 @@
     )
     (property
       "Value"
-      "gpiov2_pad"
+      "sky130_ef_io__gpiov2_pad"
       (id 1)
       (at -29.21 -34.29 0)
       (effects
@@ -3033,7 +3633,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(80.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -3047,6 +3647,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'INOUT')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__gpiov2_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(80.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -3927,12 +4587,12 @@
     )
   )
   (symbol
-    "gpiov2_pad_wrapped"
+    "sky130_ef_io__gpiov2_pad_wrapped"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -3944,7 +4604,7 @@
     )
     (property
       "Value"
-      "gpiov2_pad_wrapped"
+      "sky130_ef_io__gpiov2_pad_wrapped"
       (id 1)
       (at -29.21 -34.29 0)
       (effects
@@ -3956,7 +4616,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(80.0, 210.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -3970,6 +4630,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'INOUT')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__gpiov2_pad_wrapped"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(80.0, 210.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -4850,12 +5570,12 @@
     )
   )
   (symbol
-    "top_power_hvc"
+    "sky130_ef_io__top_power_hvc"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -4867,7 +5587,7 @@
     )
     (property
       "Value"
-      "top_power_hvc"
+      "sky130_ef_io__top_power_hvc"
       (id 1)
       (at -24.13 -16.51 0)
       (effects
@@ -4879,7 +5599,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(169.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -4893,6 +5613,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__top_power_hvc"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(169.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -5267,12 +6047,12 @@
     )
   )
   (symbol
-    "vccd_hvc_pad"
+    "sky130_ef_io__vccd_hvc_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -5284,7 +6064,7 @@
     )
     (property
       "Value"
-      "vccd_hvc_pad"
+      "sky130_ef_io__vccd_hvc_pad"
       (id 1)
       (at -22.86 -16.51 0)
       (effects
@@ -5296,7 +6076,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -5310,6 +6090,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vccd_hvc_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -5662,12 +6502,12 @@
     )
   )
   (symbol
-    "vccd_lvc_clamped2_pad"
+    "sky130_ef_io__vccd_lvc_clamped2_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -5679,7 +6519,7 @@
     )
     (property
       "Value"
-      "vccd_lvc_clamped2_pad"
+      "sky130_ef_io__vccd_lvc_clamped2_pad"
       (id 1)
       (at -21.59 -12.7 0)
       (effects
@@ -5691,7 +6531,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -5705,6 +6545,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vccd_lvc_clamped2_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -6013,12 +6913,12 @@
     )
   )
   (symbol
-    "vccd_lvc_clamped3_pad"
+    "sky130_ef_io__vccd_lvc_clamped3_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -6030,7 +6930,7 @@
     )
     (property
       "Value"
-      "vccd_lvc_clamped3_pad"
+      "sky130_ef_io__vccd_lvc_clamped3_pad"
       (id 1)
       (at -22.86 -12.7 0)
       (effects
@@ -6042,7 +6942,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -6056,6 +6956,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vccd_lvc_clamped3_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -6408,12 +7368,12 @@
     )
   )
   (symbol
-    "vccd_lvc_clamped_pad"
+    "sky130_ef_io__vccd_lvc_clamped_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -6425,7 +7385,7 @@
     )
     (property
       "Value"
-      "vccd_lvc_clamped_pad"
+      "sky130_ef_io__vccd_lvc_clamped_pad"
       (id 1)
       (at -21.59 -12.7 0)
       (effects
@@ -6437,7 +7397,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -6451,6 +7411,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vccd_lvc_clamped_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -6759,12 +7779,12 @@
     )
   )
   (symbol
-    "vccd_lvc_pad"
+    "sky130_ef_io__vccd_lvc_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -6776,7 +7796,7 @@
     )
     (property
       "Value"
-      "vccd_lvc_pad"
+      "sky130_ef_io__vccd_lvc_pad"
       (id 1)
       (at -24.13 -17.78 0)
       (effects
@@ -6788,7 +7808,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -6802,6 +7822,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vccd_lvc_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -7220,12 +8300,12 @@
     )
   )
   (symbol
-    "vdda_hvc_clamped_pad"
+    "sky130_ef_io__vdda_hvc_clamped_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -7237,7 +8317,7 @@
     )
     (property
       "Value"
-      "vdda_hvc_clamped_pad"
+      "sky130_ef_io__vdda_hvc_clamped_pad"
       (id 1)
       (at -21.59 -12.7 0)
       (effects
@@ -7249,7 +8329,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -7263,6 +8343,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vdda_hvc_clamped_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -7571,12 +8711,12 @@
     )
   )
   (symbol
-    "vdda_hvc_pad"
+    "sky130_ef_io__vdda_hvc_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -7588,7 +8728,7 @@
     )
     (property
       "Value"
-      "vdda_hvc_pad"
+      "sky130_ef_io__vdda_hvc_pad"
       (id 1)
       (at -22.86 -16.51 0)
       (effects
@@ -7600,7 +8740,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -7614,6 +8754,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vdda_hvc_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -7966,12 +9166,12 @@
     )
   )
   (symbol
-    "vdda_lvc_pad"
+    "sky130_ef_io__vdda_lvc_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -7983,7 +9183,7 @@
     )
     (property
       "Value"
-      "vdda_lvc_pad"
+      "sky130_ef_io__vdda_lvc_pad"
       (id 1)
       (at -24.13 -17.78 0)
       (effects
@@ -7995,7 +9195,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -8009,6 +9209,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vdda_lvc_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -8427,12 +9687,12 @@
     )
   )
   (symbol
-    "vddio_hvc_clamped_pad"
+    "sky130_ef_io__vddio_hvc_clamped_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -8444,7 +9704,7 @@
     )
     (property
       "Value"
-      "vddio_hvc_clamped_pad"
+      "sky130_ef_io__vddio_hvc_clamped_pad"
       (id 1)
       (at -21.59 -13.969999999999999 0)
       (effects
@@ -8456,7 +9716,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -8470,6 +9730,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vddio_hvc_clamped_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -8778,12 +10098,12 @@
     )
   )
   (symbol
-    "vddio_hvc_pad"
+    "sky130_ef_io__vddio_hvc_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -8795,7 +10115,7 @@
     )
     (property
       "Value"
-      "vddio_hvc_pad"
+      "sky130_ef_io__vddio_hvc_pad"
       (id 1)
       (at -22.86 -16.51 0)
       (effects
@@ -8807,7 +10127,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -8821,6 +10141,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vddio_hvc_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -9173,12 +10553,12 @@
     )
   )
   (symbol
-    "vddio_lvc_pad"
+    "sky130_ef_io__vddio_lvc_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -9190,7 +10570,7 @@
     )
     (property
       "Value"
-      "vddio_lvc_pad"
+      "sky130_ef_io__vddio_lvc_pad"
       (id 1)
       (at -24.13 -17.78 0)
       (effects
@@ -9202,7 +10582,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -9216,6 +10596,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vddio_lvc_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -9634,12 +11074,12 @@
     )
   )
   (symbol
-    "vssa_hvc_clamped_pad"
+    "sky130_ef_io__vssa_hvc_clamped_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -9651,7 +11091,7 @@
     )
     (property
       "Value"
-      "vssa_hvc_clamped_pad"
+      "sky130_ef_io__vssa_hvc_clamped_pad"
       (id 1)
       (at -20.32 -12.7 0)
       (effects
@@ -9663,7 +11103,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -9677,6 +11117,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vssa_hvc_clamped_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -10007,12 +11507,12 @@
     )
   )
   (symbol
-    "vssa_hvc_pad"
+    "sky130_ef_io__vssa_hvc_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -10024,7 +11524,7 @@
     )
     (property
       "Value"
-      "vssa_hvc_pad"
+      "sky130_ef_io__vssa_hvc_pad"
       (id 1)
       (at -21.59 -16.51 0)
       (effects
@@ -10036,7 +11536,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -10050,6 +11550,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vssa_hvc_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -10424,12 +11984,12 @@
     )
   )
   (symbol
-    "vssa_lvc_pad"
+    "sky130_ef_io__vssa_lvc_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -10441,7 +12001,7 @@
     )
     (property
       "Value"
-      "vssa_lvc_pad"
+      "sky130_ef_io__vssa_lvc_pad"
       (id 1)
       (at -22.86 -17.78 0)
       (effects
@@ -10453,7 +12013,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -10467,6 +12027,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vssa_lvc_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -10885,12 +12505,12 @@
     )
   )
   (symbol
-    "vssd_hvc_pad"
+    "sky130_ef_io__vssd_hvc_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -10902,7 +12522,7 @@
     )
     (property
       "Value"
-      "vssd_hvc_pad"
+      "sky130_ef_io__vssd_hvc_pad"
       (id 1)
       (at -21.59 -16.51 0)
       (effects
@@ -10914,7 +12534,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -10928,6 +12548,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vssd_hvc_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -11280,12 +12960,12 @@
     )
   )
   (symbol
-    "vssd_lvc_clamped2_pad"
+    "sky130_ef_io__vssd_lvc_clamped2_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -11297,7 +12977,7 @@
     )
     (property
       "Value"
-      "vssd_lvc_clamped2_pad"
+      "sky130_ef_io__vssd_lvc_clamped2_pad"
       (id 1)
       (at -20.32 -12.7 0)
       (effects
@@ -11309,7 +12989,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -11323,6 +13003,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vssd_lvc_clamped2_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -11631,12 +13371,12 @@
     )
   )
   (symbol
-    "vssd_lvc_clamped3_pad"
+    "sky130_ef_io__vssd_lvc_clamped3_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -11648,7 +13388,7 @@
     )
     (property
       "Value"
-      "vssd_lvc_clamped3_pad"
+      "sky130_ef_io__vssd_lvc_clamped3_pad"
       (id 1)
       (at -21.59 -12.7 0)
       (effects
@@ -11660,7 +13400,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -11674,6 +13414,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vssd_lvc_clamped3_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -12026,12 +13826,12 @@
     )
   )
   (symbol
-    "vssd_lvc_clamped_pad"
+    "sky130_ef_io__vssd_lvc_clamped_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -12043,7 +13843,7 @@
     )
     (property
       "Value"
-      "vssd_lvc_clamped_pad"
+      "sky130_ef_io__vssd_lvc_clamped_pad"
       (id 1)
       (at -20.32 -12.7 0)
       (effects
@@ -12055,7 +13855,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -12069,6 +13869,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vssd_lvc_clamped_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -12377,12 +14237,12 @@
     )
   )
   (symbol
-    "vssd_lvc_pad"
+    "sky130_ef_io__vssd_lvc_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -12394,7 +14254,7 @@
     )
     (property
       "Value"
-      "vssd_lvc_pad"
+      "sky130_ef_io__vssd_lvc_pad"
       (id 1)
       (at -22.86 -17.78 0)
       (effects
@@ -12406,7 +14266,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -12420,6 +14280,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vssd_lvc_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -12838,12 +14758,12 @@
     )
   )
   (symbol
-    "vssio_hvc_clamped_pad"
+    "sky130_ef_io__vssio_hvc_clamped_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -12855,7 +14775,7 @@
     )
     (property
       "Value"
-      "vssio_hvc_clamped_pad"
+      "sky130_ef_io__vssio_hvc_clamped_pad"
       (id 1)
       (at -20.32 -13.969999999999999 0)
       (effects
@@ -12867,7 +14787,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -12881,6 +14801,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vssio_hvc_clamped_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -13189,12 +15169,12 @@
     )
   )
   (symbol
-    "vssio_hvc_pad"
+    "sky130_ef_io__vssio_hvc_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -13206,7 +15186,7 @@
     )
     (property
       "Value"
-      "vssio_hvc_pad"
+      "sky130_ef_io__vssio_hvc_pad"
       (id 1)
       (at -21.59 -16.51 0)
       (effects
@@ -13218,7 +15198,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -13232,6 +15212,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vssio_hvc_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -13584,12 +15624,12 @@
     )
   )
   (symbol
-    "vssio_lvc_pad"
+    "sky130_ef_io__vssio_lvc_pad"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -13601,7 +15641,7 @@
     )
     (property
       "Value"
-      "vssio_lvc_pad"
+      "sky130_ef_io__vssio_lvc_pad"
       (id 1)
       (at -22.86 -17.78 0)
       (effects
@@ -13613,7 +15653,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(75.0, 197.965)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -13627,6 +15667,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "('PAD', 'POWER')"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_ef_io__vssio_lvc_pad"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(75.0, 197.965)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
@@ -14045,12 +16145,12 @@
     )
   )
   (symbol
-    "signal_5_sym_hv_local_5term"
+    "sky130_fd_io__signal_5_sym_hv_local_5term"
     (in_bom no)
     (on_board yes)
     (property
       "Reference"
-      "CELL"
+      "X"
       (id 0)
       (at 0 0 0)
       (effects
@@ -14062,7 +16162,7 @@
     )
     (property
       "Value"
-      "signal_5_sym_hv_local_5term"
+      "sky130_fd_io__signal_5_sym_hv_local_5term"
       (id 1)
       (at -13.969999999999999 -8.89 0)
       (effects
@@ -14074,7 +16174,7 @@
     )
     (property
       "Footprint"
-      "(0.0, 0.0)"
+      "(7.955, 12.12)"
       (id 2)
       (at 0 0 0)
       (effects
@@ -14088,6 +16188,66 @@
       "Datasheet"
       "sky130_ef_io.lef"
       (id 3)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Class"
+      "BLOCK"
+      (id 10)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Foreign"
+      "sky130_fd_io__signal_5_sym_hv_local_5term"
+      (id 11)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Origin"
+      "(0.0, 0.0)"
+      (id 12)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Size"
+      "(7.955, 12.12)"
+      (id 13)
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property
+      "Symmetry"
+      ""
+      (id 14)
       (at 0 0 0)
       (effects
         (font
