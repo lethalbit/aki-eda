@@ -1,5 +1,8 @@
 *.bck
+*.bak
 *.STEP
 *.step
 *.stp
 *.STP
+*.wrl
+*.wrlz
