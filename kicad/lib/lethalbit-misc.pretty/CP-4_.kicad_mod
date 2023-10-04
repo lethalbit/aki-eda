@@ -1,0 +1,81 @@
+(footprint "CP-4_" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (descr "Bivar PCB Ejector")
+  (attr exclude_from_pos_files)
+  (fp_text reference "REF**" (at -2.4 -2.4 45 unlocked) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 95a1e4b7-eeda-42b8-a27e-414ce72612bb)
+  )
+  (fp_text value "CP-4_" (at 0 1 unlocked) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp ab685ce0-c344-462f-91df-bb156118a00b)
+  )
+  (fp_line (start -7.5 -6.519) (end -6.706 -6.519)
+    (stroke (width 0.2) (type solid)) (layer "Dwgs.User") (tstamp 67b0913f-7318-4bb0-9d79-df4898d1380a))
+  (fp_line (start -3.531 -3.344) (end -3.531 -0.017)
+    (stroke (width 0.2) (type solid)) (layer "Dwgs.User") (tstamp 0968015b-694b-46e5-bc22-cb5df7c6a97a))
+  (fp_line (start 1.803 3.062) (end 27.52 -11.781)
+    (stroke (width 0.2) (type solid)) (layer "Dwgs.User") (tstamp bfc5c62e-0f72-422e-9db7-84e64ca0e17f))
+  (fp_line (start 17.968 -9.669) (end -9.753 -9.669)
+    (stroke (width 0.2) (type solid)) (layer "Dwgs.User") (tstamp 7d70f853-36c1-4ad6-8f31-ad6848af12b1))
+  (fp_line (start 26.143 -14.212) (end 17.968 -9.669)
+    (stroke (width 0.2) (type solid)) (layer "Dwgs.User") (tstamp 3bb3dafa-c805-448f-a10f-cd1cab81e078))
+  (fp_arc (start -9.88125 -8.9) (mid -9.849125 -9.289822) (end -9.753619 -9.669126)
+    (stroke (width 0.2) (type solid)) (layer "Dwgs.User") (tstamp 78407596-c365-4b37-9ecf-b2f994d88e0e))
+  (fp_arc (start -7.5 -6.51875) (mid -9.183798 -7.216202) (end -9.88125 -8.9)
+    (stroke (width 0.2) (type solid)) (layer "Dwgs.User") (tstamp b4167b2c-c202-4f8b-8023-7fc3d83d50aa))
+  (fp_arc (start -6.706 -6.519) (mid -4.460936 -5.589064) (end -3.531 -3.344)
+    (stroke (width 0.2) (type solid)) (layer "Dwgs.User") (tstamp 4916b256-3455-4e0e-bc76-a23764e16ea5))
+  (fp_arc (start -1.1561 -0.017) (mid 0.025 -1.1981) (end 1.2061 -0.017)
+    (stroke (width 0.2) (type solid)) (layer "Dwgs.User") (tstamp 4d03ec2f-fa83-4eb6-9246-b6ea814388e9))
+  (fp_arc (start 1.2061 -0.017) (mid 0.025 1.1641) (end -1.1561 -0.017)
+    (stroke (width 0.2) (type solid)) (layer "Dwgs.User") (tstamp 8581b05b-bb2b-4471-ae4c-573f78cf8462))
+  (fp_arc (start 1.802581 3.062828) (mid -1.753209 3.062465) (end -3.531 -0.017)
+    (stroke (width 0.2) (type solid)) (layer "Dwgs.User") (tstamp 41003884-a118-441b-b35f-ad1d3ceb41cf))
+  (fp_arc (start 26.143442 -14.212134) (mid 28.037574 -13.679469) (end 27.520335 -11.781067)
+    (stroke (width 0.2) (type solid)) (layer "Dwgs.User") (tstamp 7d359375-3a84-47c8-b742-69127ca9a706))
+  (fp_line (start -6.4 0) (end -6.4 4)
+    (stroke (width 0.12) (type default)) (layer "Edge.Cuts") (tstamp d95e7d41-eb89-4b02-85bc-f5bb8c7b8400))
+  (fp_line (start 0 -6.4) (end -6.4 0)
+    (stroke (width 0.12) (type default)) (layer "Edge.Cuts") (tstamp f3aaca9e-010c-4d4d-9423-05113a52b886))
+  (fp_line (start 0 -6.4) (end 5 -6.4)
+    (stroke (width 0.12) (type default)) (layer "Edge.Cuts") (tstamp 2f3a6dce-35d0-468a-889c-4b07194b6b19))
+  (fp_line (start 5 -6.4) (end 28.9 -6.4)
+    (stroke (width 0.12) (type default)) (layer "Edge.Cuts") (tstamp 15af0e4c-a1d8-44c8-b5ad-d567c64bf5ae))
+  (fp_poly
+    (pts
+      (xy -6.4 4)
+      (xy 3 4)
+      (xy 29 -11.4)
+      (xy 29 -15)
+      (xy 26.3 -15)
+      (xy 18 -10.3)
+      (xy -10.9 -10.3)
+      (xy -10.9 -5)
+      (xy -6.4 -5)
+    )
+
+    (stroke (width 0.12) (type solid)) (fill none) (layer "F.CrtYd") (tstamp e29bcbb1-e87f-4231-823e-9db3624f0650))
+  (pad "1" thru_hole circle (at 0 0) (size 5.6 5.6) (drill 2.8) (layers "*.Cu" "*.Mask") (tstamp 3ff63163-3462-49f0-9ca8-9e69c8b45e60))
+  (group "" (id efdf8942-eb58-4801-a91c-5cfc47862a4b)
+    (members
+      0968015b-694b-46e5-bc22-cb5df7c6a97a
+      3bb3dafa-c805-448f-a10f-cd1cab81e078
+      41003884-a118-441b-b35f-ad1d3ceb41cf
+      4916b256-3455-4e0e-bc76-a23764e16ea5
+      4d03ec2f-fa83-4eb6-9246-b6ea814388e9
+      67b0913f-7318-4bb0-9d79-df4898d1380a
+      78407596-c365-4b37-9ecf-b2f994d88e0e
+      7d359375-3a84-47c8-b742-69127ca9a706
+      7d70f853-36c1-4ad6-8f31-ad6848af12b1
+      8581b05b-bb2b-4471-ae4c-573f78cf8462
+      b4167b2c-c202-4f8b-8023-7fc3d83d50aa
+      bfc5c62e-0f72-422e-9db7-84e64ca0e17f
+    )
+  )
+  (model "/pool/abyss/Projects/aki-eda/kicad/lib/lethalbit-misc.3dshapes/BIVAR__INC_CP-46_VT.step"
+    (offset (xyz -608.5 -310 -1))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+)
