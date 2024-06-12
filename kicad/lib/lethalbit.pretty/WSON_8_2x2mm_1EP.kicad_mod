@@ -36,6 +36,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -48,6 +49,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -60,13 +62,14 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
 	(attr smd)
 	(fp_poly
 		(pts
-			(xy 0.2 -0.325) (xy -0.2 -0.325) (xy -0.2 -0.55) (xy 0.2 -0.55)
+			(xy 0.1 -0.325) (xy -0.1 -0.325) (xy -0.1 -0.5) (xy 0.1 -0.5)
 		)
 		(stroke
 			(width 0.5)
@@ -78,7 +81,7 @@
 	)
 	(fp_poly
 		(pts
-			(xy 0.2 0.55) (xy -0.2 0.55) (xy -0.2 0.325) (xy 0.2 0.325)
+			(xy 0.1 0.5) (xy -0.1 0.5) (xy -0.1 0.325) (xy 0.1 0.325)
 		)
 		(stroke
 			(width 0.5)
@@ -200,7 +203,7 @@
 	)
 	(pad "9" smd roundrect
 		(at 0 0)
-		(size 0.9 1.6)
+		(size 0.8 1.6)
 		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.25)
 		(uuid "9c0c01c2-8fa6-4213-86bb-ed05111a4228")
