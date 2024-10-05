@@ -1,12 +1,12 @@
-(footprint "PCIe-x16-Edge"
+(footprint "PCIe-x16-CardEdge"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(descr "PCI Express x16 Raw Edge Connector")
+	(descr "PCI Express x16 Card-Edge")
 	(tags "PCIe x16 Card-Edge")
 	(property "Reference" "REF**"
-		(at 12.2 -4.3 90)
+		(at -11.6 -8 0)
 		(layer "F.SilkS")
 		(hide yes)
 		(uuid "0ff2fa04-210d-4a52-870d-e997d6f4f012")
@@ -15,9 +15,10 @@
 				(size 1 1)
 				(thickness 0.15)
 			)
+			(justify left bottom)
 		)
 	)
-	(property "Value" "PCIe-x16-Edge"
+	(property "Value" "PCIe-x16-CardEdge"
 		(at 84.4 -1.5 0)
 		(layer "F.Fab")
 		(hide yes)
@@ -69,6 +70,18 @@
 	(attr exclude_from_pos_files exclude_from_bom)
 	(fp_poly
 		(pts
+			(xy -3.65 -7.95) (xy -11.65 -7.95) (xy -11.65 -4.5) (xy -3.65 -4.5)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "B.Mask")
+		(uuid "8c50fc04-5ec1-46bf-ae02-4bdd9fa9ce81")
+	)
+	(fp_poly
+		(pts
 			(xy 11.2 0) (xy 0 0) (xy 0 -5.45) (xy 11.2 -5.45)
 		)
 		(stroke
@@ -93,6 +106,18 @@
 	)
 	(fp_poly
 		(pts
+			(xy -3.65 -4.5) (xy -11.65 -4.5) (xy -11.65 -7.95) (xy -3.65 -7.95)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Mask")
+		(uuid "ae17ee7b-c9e1-4225-bb23-720aac117979")
+	)
+	(fp_poly
+		(pts
 			(xy 11.2 -5.45) (xy 0 -5.45) (xy 0 0) (xy 11.2 0)
 		)
 		(stroke
@@ -114,6 +139,76 @@
 		(fill solid)
 		(layer "F.Mask")
 		(uuid "dc04180e-20f6-4c4c-8bfd-06f41a84c2e2")
+	)
+	(fp_line
+		(start -45 -4.5)
+		(end -45 -14)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "e5241670-0ea7-45f5-8965-2ca91abd82c3")
+	)
+	(fp_line
+		(start -30.1 -12.75)
+		(end -30.1 -4.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "31f3c10d-9a60-43c9-9720-f522d55e2262")
+	)
+	(fp_line
+		(start -30.1 -4.5)
+		(end -45 -4.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "7896ea5c-2ba9-4a0a-bb75-4d49b1d29d4d")
+	)
+	(fp_line
+		(start -11.65 -12.75)
+		(end -30.1 -12.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "334d3359-5466-420c-8762-11a8f2bede9e")
+	)
+	(fp_line
+		(start -11.65 -4.5)
+		(end -11.65 -12.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "ce9301c5-7f0f-4690-80ed-b6f0a409e057")
+	)
+	(fp_line
+		(start -3.65 -4.5)
+		(end -11.65 -4.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d5b23206-d128-4640-a48b-e5e4070b9569")
+	)
+	(fp_line
+		(start -3.65 -4.5)
+		(end -3.65 -8.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c166a9c1-4e79-4d80-a210-e3a6cbf5de83")
 	)
 	(fp_line
 		(start 0 -0.5)
@@ -206,14 +301,35 @@
 		(uuid "e0f91b32-82ef-4295-a8c3-46af69518ea9")
 	)
 	(fp_line
+		(start 84.3 -12.75)
+		(end 90 -12.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "79030a92-b693-4445-89e9-193daffd685c")
+	)
+	(fp_line
 		(start 84.3 -0.5)
-		(end 84.3 -8.4)
+		(end 84.3 -12.75)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "Edge.Cuts")
 		(uuid "35daa92b-11f9-4eed-9b0d-7e9f3122d8f1")
+	)
+	(fp_arc
+		(start -3.65 -8.4)
+		(mid -1.825 -10.225)
+		(end 0 -8.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "dda2bb61-b296-4771-badf-33dc65fb0d49")
 	)
 	(fp_arc
 		(start 11.2 -7.45)
@@ -227,7 +343,7 @@
 		(uuid "2bcf7f16-2c84-48b2-af38-b13c62b6790d")
 	)
 	(fp_line
-		(start -10 -1.4)
+		(start -45 -1.4)
 		(end 90 -1.4)
 		(stroke
 			(width 0.05)
@@ -237,7 +353,7 @@
 		(uuid "84d8339e-787d-45de-a997-00f3d0d1794c")
 	)
 	(fp_line
-		(start -10 0)
+		(start -45 0)
 		(end 90 0)
 		(stroke
 			(width 0.05)
@@ -778,7 +894,7 @@
 		(at 4.6 -3.5)
 		(size 0.7 4.2)
 		(layers "F.Cu")
-		(uuid "b83d5b85-8a62-48e0-b627-cc77de36c966")
+		(uuid "d31af124-3c16-44ea-8649-3ba4fa0f4db5")
 	)
 	(pad "B6" smd rect
 		(at 5.6 -3.5)

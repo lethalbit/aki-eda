@@ -1,12 +1,12 @@
-(footprint "PCIe-x1-Edge"
+(footprint "PCIe-x1-CardEdge-MH"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(descr "PCI Express x1 Edge only")
+	(descr "PCI Express x1 Card-Edge with mounting holes")
 	(tags "PCIe x1 Card-Edge")
 	(property "Reference" "REF**"
-		(at 12.2 -4.3 90)
+		(at -11.6 -8 0)
 		(layer "F.SilkS")
 		(hide yes)
 		(uuid "a67c70bc-65bd-4188-b278-634f492e94b7")
@@ -15,10 +15,11 @@
 				(size 1 1)
 				(thickness 0.15)
 			)
+			(justify left bottom)
 		)
 	)
-	(property "Value" "PCIe-x1-Edge"
-		(at 20.4 -1.5 180)
+	(property "Value" "PCIe-x1-CardEdge-MH"
+		(at 20.4 -1.5 0)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "7bebdeed-6260-4a49-b3d9-f105ab90a430")
@@ -69,6 +70,18 @@
 	(attr exclude_from_pos_files exclude_from_bom)
 	(fp_poly
 		(pts
+			(xy -3.65 -7.95) (xy -11.65 -7.95) (xy -11.65 -4.5) (xy -3.65 -4.5)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "B.Mask")
+		(uuid "a7802f98-cc05-4b31-ac53-b0a83c2cd108")
+	)
+	(fp_poly
+		(pts
 			(xy 11.2 0) (xy 0 0) (xy 0 -5.45) (xy 11.2 -5.45)
 		)
 		(stroke
@@ -93,6 +106,18 @@
 	)
 	(fp_poly
 		(pts
+			(xy -3.65 -4.5) (xy -11.65 -4.5) (xy -11.65 -7.95) (xy -3.65 -7.95)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Mask")
+		(uuid "459d3097-c4f9-4d1a-a0b2-55b5473156c4")
+	)
+	(fp_poly
+		(pts
 			(xy 11.2 -5.45) (xy 0 -5.45) (xy 0 0) (xy 11.2 0)
 		)
 		(stroke
@@ -114,6 +139,76 @@
 		(fill solid)
 		(layer "F.Mask")
 		(uuid "0603e562-a17d-4b00-aadf-ac4110108e8a")
+	)
+	(fp_line
+		(start -45 -4.5)
+		(end -45 -14)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "cb0e1ad8-d44b-4d6c-a738-78cf79a288eb")
+	)
+	(fp_line
+		(start -30.1 -12.75)
+		(end -30.1 -4.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "27ae5670-ea38-419c-bba4-83073fe29456")
+	)
+	(fp_line
+		(start -30.1 -4.5)
+		(end -45 -4.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "b1e71379-61d5-445e-ae54-3fec57de6e54")
+	)
+	(fp_line
+		(start -11.65 -12.75)
+		(end -30.1 -12.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "f42337f6-f8a7-4f89-ad0d-656291d7b6fb")
+	)
+	(fp_line
+		(start -11.65 -4.5)
+		(end -11.65 -12.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c6273842-800f-4be2-ae71-775f8889545f")
+	)
+	(fp_line
+		(start -3.65 -4.5)
+		(end -11.65 -4.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "934b9660-aece-4217-919c-b2b9dc6cb7b9")
+	)
+	(fp_line
+		(start -3.65 -4.5)
+		(end -3.65 -8.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c476b43a-34fd-45b4-85f5-5f1dfd4d326d")
 	)
 	(fp_line
 		(start 0 -0.5)
@@ -206,14 +301,35 @@
 		(uuid "64654a32-7cff-4a47-9cb5-a79d82500986")
 	)
 	(fp_line
+		(start 20.3 -12.75)
+		(end 41 -12.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "ebbca2b4-8033-4474-8c14-7836636c1e0d")
+	)
+	(fp_line
 		(start 20.3 -0.5)
-		(end 20.3 -8.4)
+		(end 20.3 -12.75)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(layer "Edge.Cuts")
 		(uuid "3471fae4-9895-4a0b-9d54-201b8ec527af")
+	)
+	(fp_arc
+		(start -3.65 -8.4)
+		(mid -1.825 -10.225)
+		(end 0 -8.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "17ccf20e-1d39-4a85-a72c-7ce566a55047")
 	)
 	(fp_arc
 		(start 11.2 -7.45)
@@ -227,7 +343,7 @@
 		(uuid "7ddd3172-5790-410f-8422-595bf794cdd1")
 	)
 	(fp_line
-		(start -10 -1.4)
+		(start -45 -1.4)
 		(end 41 -1.4)
 		(stroke
 			(width 0.05)
@@ -238,7 +354,7 @@
 	)
 	(fp_line
 		(start 41 0)
-		(end -10 0)
+		(end -45 0)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -473,5 +589,13 @@
 		(size 0.7 4.2)
 		(layers "F.Cu")
 		(uuid "ecd566b7-402d-4f1d-9656-102b631475ef")
+	)
+	(pad "GND" thru_hole circle
+		(at -37.5 -9.35)
+		(size 6 6)
+		(drill 3.18)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c922ee9a-82dd-491e-858b-43eaf6700b49")
 	)
 )
