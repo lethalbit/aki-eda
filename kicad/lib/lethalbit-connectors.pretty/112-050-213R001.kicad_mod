@@ -558,7 +558,7 @@
 		(remove_unused_layers no)
 		(uuid "7049b47c-ac96-4f03-804d-8a49eac31c50")
 	)
-	(model "${EDALIBS}/lethalbit-connectors.3dshapes/112-050-213R001.STEP"
+	(model "${EDALIBS}/lethalbit-connectors.3dshapes/112-050-213R061.wrz"
 		(offset
 			(xyz 0 -11 8)
 		)
