@@ -7,15 +7,16 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 88 0)
+			(at -12.7 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "AU10P-FFVB676"
-			(at 0 85.344 0)
+			(at 0 0 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23,7 +24,7 @@
 			)
 		)
 		(property "Footprint" "lethalbit-bga:FFVB676"
-			(at 0 82.804 0)
+			(at 0 -21.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32,7 +33,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.amd.com/v/u/en-US/ds890-ultrascale-overview"
-			(at 0 82.804 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41,7 +42,7 @@
 			)
 		)
 		(property "Description" "Xilinx Artix UltraScale+ 20P FFVB676"
-			(at 0 82.804 0)
+			(at 0 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
