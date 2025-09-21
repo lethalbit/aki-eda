@@ -12588,14 +12588,14 @@
 			(pin passive line
 				(at -6.35 -88.9 0)
 				(length 3.81)
-				(name "Pin_118"
+				(name "Pin_119"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "118"
+				(number "119"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -13477,7 +13477,7 @@
 						)
 					)
 				)
-				(number "86"
+				(number "96"
 					(effects
 						(font
 							(size 1.27 1.27)
